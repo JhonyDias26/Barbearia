@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import './index.css';
 
 export default function PaginaInicial() {
@@ -12,7 +12,7 @@ export default function PaginaInicial() {
         <div className="container">
             <div className={ehTemaEscuro ? 'modo-escuro' : 'modo-claro'}>
                 <div className="header limitar-cessao">
-                    <img src={'public/assets/barbearia-logo.png'} alt="logo" className="img-topo" />
+                    <img src={'assets/barbearia-logo.png'} alt="logo" className="img-topo" />
                     <button className={ehTemaEscuro ? 'botao-topo2' : 'botao-topo1'} onClick={alterarTema}>
                         <img src={ehTemaEscuro ? `assets/sun.png` : `assets/moon.png`} alt="img-tema" className="img-botao-topo" />
                         {ehTemaEscuro ? `Light` : `Dark`}
